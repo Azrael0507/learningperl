@@ -1,0 +1,7 @@
+#!/usr/bin/perl
+
+print "Please enter your string:\n";
+chomp(@lines = <STDIN>);
+$my_format = "%20s\n" x @lines;
+print "1234567890" x 3,"\n";
+printf $my_format, @lines;

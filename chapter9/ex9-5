@@ -1,0 +1,21 @@
+#!/usr/bin/perl
+
+%do_file;
+foreach(@ARGV){
+	$do_file{$_} = 1;
+}
+
+while(<>){
+	/\A## Copyright/ && delete $do_file{$ARGV};
+}
+@check_result = sort keys %do_file;
+print "do_file: ",%do_file,"\n";
+print "\@result: @check_result\n";
+
+#$^I = ".bak";
+#while(<>){
+#	if(/\A#!/){
+#		$_ .= "## Copyright 2014 by Azrael\n";
+#	}
+#	print;
+#}

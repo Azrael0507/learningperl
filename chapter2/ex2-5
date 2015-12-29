@@ -1,0 +1,8 @@
+#!/usr/bin/perl
+
+print "Please enter string:";
+chomp($string = <STDIN>);
+print "Please enter one number:";
+chomp($number = <STDIN>);
+print "$string" x $number;
+print "\n";

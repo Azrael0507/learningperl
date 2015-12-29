@@ -1,0 +1,13 @@
+#!/usr/bin/perl
+
+print "Please enter your names string:\n";
+chomp(@names = <STDIN>);
+my %sum;
+
+foreach(@names){
+	$sum{$_}++;
+}
+
+foreach(keys %sum){
+	print "$_ was seen $sum{$_} times.\n";
+}

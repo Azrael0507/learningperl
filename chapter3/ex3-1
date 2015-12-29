@@ -1,0 +1,4 @@
+#!/usr/bin/perl
+
+print "Please enter your string and Ctrl+D to end:\n";
+print reverse <STDIN>;

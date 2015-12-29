@@ -1,0 +1,10 @@
+#!/usr/bin/perl
+
+@lines = <>;
+
+print "string with fred is:\n";
+foreach(@lines){
+	if (/fred/){
+		print $_;
+	}
+}

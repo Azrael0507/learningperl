@@ -1,0 +1,11 @@
+#!/usr/bin/perl
+
+print "The total of 1..1000 is ",total(1..1000),"\n";
+
+sub total{
+	my $sum;
+	foreach(@_){
+		$sum += $_;
+	}
+	$sum;
+}

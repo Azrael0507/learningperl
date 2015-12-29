@@ -1,0 +1,11 @@
+#!/usr/bin/perl
+
+print "Please enter your string:\n";
+@lines = <STDIN>;
+
+print "string with fred:\n";
+foreach(@lines){
+	if (/fred/){
+		print $_;
+	}
+}

@@ -1,0 +1,20 @@
+#!/usr/bin/perl
+## Copyright 2014 by Azrael
+$in_filename = $ARGV[0];
+
+defined $in_filename || print "Usage: $0 filename";
+
+print "filename: $in_filename";
+$out_filename = $in_filename;
+$out_filename =~ s/(\.\w+)?\z/.out/;
+
+open $in_fh, '<', $in_filename
+	or die "can't open $in_filename";
+
+open $out_fh, '>', $out_filename
+	or die "can't open $out_filename";
+
+while(<$in_fh>){
+	s/Fred/Larry/gi;
+	print $out_fh $_;
+}

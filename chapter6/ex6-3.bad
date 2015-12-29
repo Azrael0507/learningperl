@@ -1,0 +1,5 @@
+#!/usr/bin/perl
+printf "%30s = %50s \n", "KEYS", "VALUES";
+foreach(sort keys %ENV){
+	printf "%30s = %50s \n", $_, $ENV{$_};
+}

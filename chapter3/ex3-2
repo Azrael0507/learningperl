@@ -1,0 +1,8 @@
+#!/usr/bin/perl
+
+print "Please enter number Ctrl+D to end:\n";
+@num = <STDIN>;
+@people = qw( fred betty barney dino wilma pebbles bamm-bamm );
+foreach (@num){
+	print "$people[$_]\n";
+}

@@ -1,0 +1,13 @@
+#!/usr/bin/perl
+
+print "Please enter \$watch string:\n";
+$what = <STDIN>;
+chomp($what);
+while(<>){
+	if(/($what){3}/){
+		print "Matched:  $_  Matched part: $&\n";
+	}
+	else{
+		print "Not Matched:  $_"
+	}
+}

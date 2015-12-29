@@ -1,0 +1,25 @@
+#!/usr/bin/perl
+
+my @fred = above_average(1..10);
+$test = @fred;
+print "$test \n";
+print "\@fred is @fred\n";
+
+
+sub average{
+	my $count = @_;
+	my $sum;
+	foreach(@_){
+		$sum += $_;
+	}
+	$sum/$count;
+}
+
+sub above_average{
+	my $average = average(@_);
+	my @list;
+	foreach(@_){
+		($_ > $average) && push @list, $_;
+	}
+	@list;
+}

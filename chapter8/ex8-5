@@ -1,0 +1,12 @@
+#!/usr/bin/perl
+
+while(<>){
+	chomp;
+	if(/(\b\w*a\b)(.{0,5})/){
+		print "Matched: \$1 contains '$1' \n";
+		print "Matched: \$2 contains '$2' \n"
+	}
+	else{
+		print "NO match: |$_|\n";
+	}
+}

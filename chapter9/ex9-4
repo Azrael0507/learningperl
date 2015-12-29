@@ -1,0 +1,10 @@
+#!/usr/bin/perl
+
+$^I = ".bak";
+
+while(<>){
+	if(/\A#!/){
+		$_ .= "\n## Copyright 2014 by Azrael\n";
+	}
+	print;
+}

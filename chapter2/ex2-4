@@ -1,0 +1,8 @@
+#!/usr/bin/perl
+
+print "please the first number:";
+chomp($first = <STDIN>);
+print "please the second number:";
+chomp($second = <STDIN>);
+$result = $first * $second;
+print "$first * $second = $result\n";

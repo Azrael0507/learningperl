@@ -1,0 +1,20 @@
+total 53
+drwxrwxr-x+ 59 root  admin  2006 11 19 17:17 Applications
+drwxr-xr-x+ 64 root  wheel  2176 10 17 19:56 Library
+drwxr-xr-x@  2 root  wheel    68  9 10 04:47 Network
+drwxr-xr-x+  4 root  wheel   136 10 17 10:19 System
+drwxr-xr-x   6 root  admin   204 10 17 10:20 Users
+drwxrwxrwt@  4 root  admin   136 11 25 13:54 Volumes
+drwxr-xr-x@ 39 root  wheel  1326 10 17 10:19 bin
+drwxrwxr-t@  2 root  admin    68  9 10 04:47 cores
+dr-xr-xr-x   3 root  wheel  4210 11 25 13:54 dev
+lrwxr-xr-x@  1 root  wheel    11 10 17 10:15 etc -> private/etc
+dr-xr-xr-x   2 root  wheel     1 11 25 13:54 home
+-rw-r--r--@  1 root  wheel   313 10  1 14:12 installer.failurerequests
+dr-xr-xr-x   2 root  wheel     1 11 25 13:54 net
+drwxr-xr-x@  6 root  wheel   204 10 17 10:20 private
+drwxr-xr-x@ 61 root  wheel  2074 11 22 01:43 sbin
+lrwxr-xr-x@  1 root  wheel    11 10 17 10:16 tmp -> private/tmp
+drwxr-xr-x@ 10 root  wheel   340 10 17 10:20 usr
+lrwxr-xr-x@  1 root  wheel    11 10 17 10:16 var -> private/var
+lrwxr-xr-x   1 root  wheel    49 10  7 14:59 用户信息 -> /Library/Documentation/User Information.localized

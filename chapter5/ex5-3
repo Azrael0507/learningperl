@@ -1,0 +1,12 @@
+#!/usr/bin/perl
+
+print "Please a number:";
+chomp($num = <STDIN>);
+
+print "Please enter your string:\n";
+chomp(@lines = <STDIN>);
+
+print "1234567890" x (($num+19)/10), "\n";
+
+$my_format = "%${num}s\n" x @lines;
+printf $my_format, @lines;
